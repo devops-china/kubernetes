@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 docker build -t ihakula/idea-board -f ./Dockerfile .
-docker tag ihakula/idea-board ihakula/idea-board:latest
+docker tag ihakula/idea-board ihakula/idea-board:step-6
 docker login --username ihakula --password wayde191
-docker push ihakula/idea-board:latest
+docker push ihakula/idea-board:step-6

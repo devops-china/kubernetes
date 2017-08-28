@@ -3,6 +3,7 @@
 # Do auth and create project
 gcloud auth login
 
+# Create project
 if gcloud projects describe asia-project-wayde191 > /dev/null; then
   echo 'Project asia-project-wayde191 is created...'
 else
@@ -15,9 +16,11 @@ gcloud compute project-info describe --project asia-project-wayde191
 
 gcloud container clusters get-credentials second-asia-cluster -z asia-northeast1-a
 
+# Firewall rules
 gcloud compute firewall-rules create my-income-rule --allow tcp:20000-40000
 gcloud compute firewall-rules list
 
+# Terraform deploy
 cd terraform
 terraform init
 terraform plan
@@ -44,5 +47,20 @@ kubectl get service
 
 #kubectl delete deployments,svc my-idea; kubectl create -f ./terraform/run-my-idea.yaml
 
+# Check status
 kubectl get svc frontend -o yaml | grep nodePort -C 5
 kubectl get nodes -o yaml | grep ExternalIP -C 1
+
+# Scale service
+kubectl scale deployment frontend --replicas=3
+
+# Update deployment
+kubectl set image deployment/frontend nodejs-redis=docker.io/ihakula/idea-board:step-6
+kubectl rollout status deployment
+
+# Roll back
+kubectl rollout history deployment/frontend
+kubectl rollout undo deployment/frontend
+
+# Destroy
+terraform destroy

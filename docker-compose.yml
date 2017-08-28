@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  my-redis:
+    image: redis
+
+  idea-board:
+    image: ihakula/idea-board:latest
+    ports:
+      - "9000:9000"
+    links:
+      - my-redis:my-redis
+    depends_on:
+      - "my-redis"

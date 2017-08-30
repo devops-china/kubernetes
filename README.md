@@ -52,6 +52,6 @@ The application should then be on http://127.0.0.1:9000
 
 |Region\Action  | Office TW VPN(Xian DC) | Office | Home | Home TW VPN(Xian DC) | 
 | ------| ------ | ------ | ------ | ------ |
-| **Asia-southeast1** | 0.13s user<br/> 0.02s system<br/> 22% cpu<br/> 0.631 total | 0.13s user<br/> 0.02s system<br/> 30% cpu<br/> 0.494 total | &#10004; | &#10004; |
-| **Asia-east1** | 0.42s user<br/> 0.07s system<br/> 53% cpu<br/> 0.905 total | 0.13s user<br/> 0.02s system<br/> 25% cpu<br/> 0.594 total | &#65794; | &#65794; |
-| **Asia-northeast1** | 0.13s user<br/> 0.02s system<br/> 16% cpu<br/> 0.841 total | 0.44s user<br/> 0.08s system<br/> 31% cpu<br/> 1.643 total | &#65794; | &#65794; |
+| **Asia-southeast1** | 0.13s user<br/> 0.02s system<br/> 22% cpu<br/> 0.631 total | 0.13s user<br/> 0.02s system<br/> 30% cpu<br/> 0.494 total | timeout | 0.13s user<br/> 0.02s system<br/> 23% cpu<br/> 0.610 total |
+| **Asia-east1** | 0.42s user<br/> 0.07s system<br/> 53% cpu<br/> 0.905 total | 0.13s user<br/> 0.02s system<br/> 25% cpu<br/> 0.594 total | timeout | 0.14s user<br/> 0.02s system<br/> 29% cpu<br/> 0.536 total |
+| **Asia-northeast1** | 0.13s user<br/> 0.02s system<br/> 16% cpu<br/> 0.841 total | 0.44s user<br/> 0.08s system<br/> 31% cpu<br/> 1.643 total | timeout | 0.13s user<br/> 0.02s system<br/> 23% cpu<br/> 0.630 total |

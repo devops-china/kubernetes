@@ -44,9 +44,9 @@ The application should then be on http://127.0.0.1:9000
 
 |Region\Action  | Office TW VPN(Xian DC) | Office | Home | Home TW VPN(Xian DC) | 
 | ------| ------ | ------ | ------ | ------ |
-| **Asia-southeast1** | ![office-xian](./asserts/images/southeast-office-xian-vpn.png) | ![office](./asserts/images/southeast-office.png) | &#10004; | &#10004; |
-| **Asia-east1** | ![office-xian](./asserts/images/east-office-xian-vpn.png) | ![office](./asserts/images/east-office.png) | &#65794; | &#65794; |
-| **Asia-northeast1** | ![office-xian](./asserts/images/northeast-office-xian-vpn.png) | ![office](./asserts/images/northeast-office.png) | &#65794; | &#65794; |
+| **Asia-southeast1** | ![office-xian](./asserts/images/southeast-office-xian-vpn.png) | ![office](./asserts/images/southeast-office.png) | ![home](./asserts/images/southeast-home.png) | ![home-xian](./asserts/images/southeast-home-xian-vpn.png) |
+| **Asia-east1** | ![office-xian](./asserts/images/east-office-xian-vpn.png) | ![office](./asserts/images/east-office.png) | ![office](./asserts/images/east-home.png) | ![home-xian](./asserts/images/east-home-xian-vpn.png) |
+| **Asia-northeast1** | ![office-xian](./asserts/images/northeast-office-xian-vpn.png) | ![office](./asserts/images/northeast-office.png) | ![home](./asserts/images/northeast-home.png) | ![home-xian](./asserts/images/northeast-home-xian-vpn.png) |
 
 ### Asia Region Dev building service - kubectl get pods > /dev/null 
 

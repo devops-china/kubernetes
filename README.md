@@ -45,8 +45,8 @@ The application should then be on http://127.0.0.1:9000
 |Region\Action  | Office TW VPN(Xian DC) | Office | Home | Home TW VPN(Xian DC) | 
 | ------| ------ | ------ | ------ | ------ |
 | **Asia-southeast1** | ![office-xian](./asserts/images/southeast-office-xian-vpn.png) | ![office](./asserts/images/southeast-office.png) | &#10004; | &#10004; |
-| **Asia-east1** | 0.42s user<br/> 0.07s system<br/> 53% cpu<br/> 0.905 total | 0.13s user<br/> 0.02s system<br/> 25% cpu<br/> 0.594 total | &#65794; | &#65794; |
-| **Asia-northeast1** | 0.13s user<br/> 0.02s system<br/> 16% cpu<br/> 0.841 total | 0.44s user<br/> 0.08s system<br/> 31% cpu<br/> 1.643 total | &#65794; | &#65794; |
+| **Asia-east1** | ![office-xian](./asserts/images/east-office-xian-vpn.png) | ![office](./asserts/images/east-office.png) | &#65794; | &#65794; |
+| **Asia-northeast1** | ![office-xian](./asserts/images/northeast-office-xian-vpn.png) | ![office](./asserts/images/northeast-office.png) | &#65794; | &#65794; |
 
 ### Asia Region Dev building service - kubectl get pods > /dev/null 
 

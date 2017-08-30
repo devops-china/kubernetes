@@ -56,3 +56,17 @@ The application should then be on http://127.0.0.1:9000
 | **Asia-southeast1** | 0.13s user<br/> 0.02s system<br/> 22% cpu<br/> 0.631 total | 0.13s user<br/> 0.02s system<br/> 30% cpu<br/> 0.494 total | timeout | 0.13s user<br/> 0.02s system<br/> 23% cpu<br/> 0.610 total |
 | **Asia-east1** | 0.42s user<br/> 0.07s system<br/> 53% cpu<br/> 0.905 total | 0.13s user<br/> 0.02s system<br/> 25% cpu<br/> 0.594 total | timeout | 0.14s user<br/> 0.02s system<br/> 29% cpu<br/> 0.536 total |
 | **Asia-northeast1** | 0.13s user<br/> 0.02s system<br/> 16% cpu<br/> 0.841 total | 0.44s user<br/> 0.08s system<br/> 31% cpu<br/> 1.643 total | timeout | 0.13s user<br/> 0.02s system<br/> 23% cpu<br/> 0.630 total |
+
+```
+time kubectl set image deployment/frontend nodejs-redis=docker.io/ihakula/idea-board:step-6
+deployment "frontend" image updated
+kubectl set image deployment/frontend   
+0.14s user 0.03s system 5% cpu 3.020 total
+
+time kubectl scale deployment frontend --replicas=3
+deployment "frontend" scaled
+kubectl scale deployment frontend --replicas=3  
+0.14s user 0.02s system 7% cpu 2.111 total
+
+
+```

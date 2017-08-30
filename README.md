@@ -34,10 +34,11 @@ The application should then be on http://127.0.0.1:9000
 
 ### Support China 
 
-|  | gcloud | terraform | kubectl | service | 
-| ------| ------ | ------ | ------ | ------ |
-| **office** | &#10004; | &#10004; | &#10004; | &#10004; |
-| **home** | &#65794; | &#65794; | &#65794; | &#65794; |
+|  | gcloud | kubectl | service | 
+| ------| ------ | ------ | ------ |
+| **office** | &#10004; | &#10004; | &#10004; |
+| **vpn** | &#10004; | &#10004; | &#10004; |
+| **home** | &#65794; | &#65794; | &#10004; |
 
 
 ### Asia Region Service Accessing

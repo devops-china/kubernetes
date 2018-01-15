@@ -2,12 +2,13 @@
 
 # Do auth and create project
 gcloud auth login
+# not work at home
 
 # Create project
 if gcloud projects describe asia-project-wayde191 > /dev/null; then
   echo 'Project asia-project-wayde191 is created...'
 else
-  pgcloud projects create asia-project-wayde191 --name=asia-project
+  gcloud projects create asia-project-wayde191 --name=asia-project
 fi
 
 gcloud config set project asia-project-wayde191
@@ -15,6 +16,8 @@ gcloud config list
 gcloud compute project-info describe --project asia-project-wayde191
 
 gcloud container clusters get-credentials second-asia-cluster -z asia-northeast1-a
+gcloud container clusters get-credentials east-asia-cluster -z asia-east1-a
+gcloud container clusters get-credentials south-asia-cluster -z asia-southeast1-a
 
 # Firewall rules
 gcloud compute firewall-rules create my-income-rule --allow tcp:20000-40000
